@@ -1,4 +1,5 @@
 # Django settings for mysite project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -155,4 +156,4 @@ LOGGING = {
     }
 }
 
-TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates'),)
